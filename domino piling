@@ -1,0 +1,15 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int N, M;                              
+    int sum=0,a=0;
+ 
+   	cin>>N>>M; //represents N rows and M columns
+   	    a=N/2; //The number of tarot cards that can be placed in a column  
+         sum = a * M; // multiply by the total number of columns
+         if (N% 2 == 1) //if odd lines
+         sum += M / 2; //Add the number of cards in this row
+   	cout<<sum<<endl; 
+    return 0;
+} 
